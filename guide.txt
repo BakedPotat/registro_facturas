@@ -1,0 +1,13 @@
+   // Mostrar el formulario con los datos obtenidos
+        echo '<form method="POST" action="guardar_modificacion.php">';
+        echo '<input type="hidden" name="txtIdtOriginal" value="' . $txtIdtConsulta . '">';
+
+        // Rellenar los campos con los datos obtenidos
+        echo 'Nombre de su empresa: <input type="text" name="txtName" value="' . $row['NombreEmisor'] . '"><br>';
+        echo 'Correo electrónico: <input type="text" name="txtEmail" value="' . $row['CorreoElectronicoEmisor'] . '"><br>';
+        echo 'Tipo de identificación: <input type="text" name="txtIdtype" value="' . $row['TipoIdentificacionEmisor'] . '"><br>';
+        echo 'Teléfono: <input type="text" name="txtPhone" value="' . $row['NumTelefonoEmisor'] . '"><br>';
+        echo 'Ubicación: <input type="text" name="txtUbicacion" value="' . $row['Ubicacion'] . '"><br>';
+        
+        echo '<input type="submit" name="SubmitModificar" id="SubmitModificar" value="Guardar Cambios">';
+        echo '</form>';

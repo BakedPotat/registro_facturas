@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Registro de empresas </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Registro</div>
+      <div class="content">
+        <form method="POST" action="contact.php">
+          <div class="user-details">
+            <div class="input-box">
+              <label for="name" class="details">Nombre de su empresa</label>
+              <input type="text" placeholder="Empresa" name="txtName" id="txtName" required>
+            </div>
+            <div class="input-box">
+              <label for="email" class="details">Email</label>
+              <input type="text" placeholder="Correo electrónico" name="txtEmail" id="txtEmail" required>
+            </div>
+            <div class="input-box" style="position: relative; width: 200px;">
+              <label for="idtype">Tipo de identificación:</label>
+              <select name="txtIdtype" id="txtIdtype" required>
+                <option value="Física">Física</option>
+                <option value="Jurídica">Jurídica</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <label for="idtext" class="details">Identificación</label>
+              <input type="text" placeholder="identificación" name="txtIdt" id="txtIdt" required>
+            </div>
+            <div class="input-box">
+              <label for="phone" class="details">Teléfono</label>
+              <input type="text" placeholder="Su número de teléfono" name="txtPhone" id="txtPhone" required pattern="[0-9]+" title="Por favor, ingrese solo números">
+            </div>
+            <div class="input-box">
+              <label for="ubicacion" class="details">Ubicación</label>
+              <input type="text" placeholder="Ingrese la dirección exacta" name="txtUbicacion" id="txtUbicacion" required>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" name="Submit" id="Submit" value="Registrarse">
+          </div>
+        </form>
+        <form>
+          <div class="button">
+            <input type="submit" name="Submit" id="Submit" value="Consultar sus datos" formaction="check_info_id.html">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

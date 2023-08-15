@@ -13,7 +13,7 @@ $txtPhone = $_POST['txtPhone'];
 $txtUbicacion = $_POST['txtUbicacion'];
 
 // database insert SQL code
-$sql = "INSERT INTO `Emisor` (`Id`, `NombreEmisor`, `CorreoElectronicoEmisor`, `TipoIdentificacionEmisor`, `NumTelefonoEmisor`, `Ubicacion`) VALUES ('0', '$txtName', '$txtEmail', '$txtIdtype', '$txtPhone',  '$txtUbicacion')";
+$sql = "INSERT INTO `Emisor` (`Id`, `NombreEmisor`, `CorreoElectronicoEmisor`, `TipoIdentificacionEmisor`, `Identificacion`, `NumTelefonoEmisor`, `Ubicacion`) VALUES ('0', '$txtName', '$txtEmail', '$txtIdtype', '$txtIdt', '$txtPhone',  '$txtUbicacion')";
 
 // insert in database 
 $rs = mysqli_query($con, $sql);

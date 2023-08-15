@@ -8,6 +8,7 @@ $con = mysqli_connect('164.92.64.133', 'pepe', 'Coope2022','Facturacion');
 $txtName = $_POST['txtName'];
 $txtEmail = $_POST['txtEmail'];
 $txtIdtype = $_POST['txtIdtype'];
+$txtIdt = $_POST['txtIdt'];
 $txtPhone = $_POST['txtPhone'];
 $txtUbicacion = $_POST['txtUbicacion'];
 
